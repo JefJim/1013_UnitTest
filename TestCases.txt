@@ -1,5 +1,15 @@
 Test Name,Category,Objective
+
 TC_AddBook_Success "Functionality" Verify that a book is correctly added to the library.
+
 TC_AddBook_DuplicateISBN_ThrowsException "Data Validation" Ensure the system prevents duplicate ISBN entries.
+
 TC_BorrowBook_AlreadyBorrowed_ThrowsException "Error Handling" Verify exception handling when a book is unavailable.
+
 TC_RemoveBook_Success "Functionality" Confirm successful removal of a book via ISBN.
+
+TC_BorrowBook_NonExistentISBN "Error Handling" Ensure KeyNotFoundException is thrown for missing books.
+
+TC_ReturnBook_InvalidBook "Error Handling" Ensure the system cannot return a book it doesn't track.
+
+TC_AddBook_EmptyISBN "Data Validation" "Ensure ArgumentException prevents ""null/empty"" data entries."
